@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.container h2, span {
+    background-color: #c4c4c4;
+    margin: 30px;
+}
+
+.iconsBlock {
+    border: 1px solid;
+    width: 280px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsBlock div {
+    background-color: #c4c4c4;
+    width: 60px;
+    height: 60px;
+}
