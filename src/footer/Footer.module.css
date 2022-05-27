@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     justify-content: center;
+    background-color: #ebffe4;
 }
 
 .container {
