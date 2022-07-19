@@ -1,13 +1,28 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "Intro";
+    src: local("Intro"),
+    url("./common/fonts/intro/Intro-Regular.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: local("Lato"),
+    url("./common/fonts/lato/Lato-Black.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+    url("./common/fonts/poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
 }
