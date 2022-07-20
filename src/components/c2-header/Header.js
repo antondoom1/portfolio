@@ -1,6 +1,7 @@
 import s from './Header.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import headerBg from './img/Jhon.jpg'
+import {MainButton} from '../c0-common/main-button/mainButton'
 
 export const Header = () => {
   const background = {
@@ -12,15 +13,20 @@ export const Header = () => {
       <div className={s.container}>
         <div>
           <h1>
-            {'Anton '}
-            <div>Yakavenka</div>
+            Anton
+            <span> Yakavenka</span>
           </h1>
           <h3>
             Front-end developer
           </h3>
-          <a href="#contact" className={s.button}>Contact Me</a>
+
+          <MainButton
+            title={'contact me'}
+            link={'src/components/c2-header/Header#contact'}
+          />
+
           <div>
-            <a href="#about">
+            <a href="src/components/c2-header/Header#about">
               <FontAwesomeIcon
                 icon="fa-solid fa-circle-chevron-down"
                 transform={'down-70'}

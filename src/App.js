@@ -1,18 +1,13 @@
 import './App.css'
-// import {Menu} from './menu/Menu'
-import {Header} from './header/Header'
-// import {Skills} from './skills/Skills'
-// import {Projects} from './projects/Projects'
-// import {RemoteWork} from './remote-work/RemoteWork'
-// import {Contacts} from './contacts/Contacts'
-// import {Footer} from './footer/Footer'
+import {Header} from './components/c2-header/Header'
+import {About} from './components/c3-about/About'
 
 function App() {
   return (
     <div className="App">
       {/*<Menu/>*/}
       <Header/>
-      {/*<Skills/>*/}
+      <About/>
       {/*<Projects/>*/}
       {/*<RemoteWork/>*/}
       {/*<Contacts/>*/}

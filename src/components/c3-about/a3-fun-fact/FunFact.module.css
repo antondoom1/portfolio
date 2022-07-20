@@ -1,0 +1,11 @@
+.container {
+    background: #f8f8f8;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container div {
+    width: 290px
+}
