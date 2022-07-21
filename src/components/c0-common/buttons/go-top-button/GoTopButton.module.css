@@ -1,0 +1,28 @@
+/* Color Theme Swatches in Hex */
+.goTop {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  background-color: rgba(179, 179, 179, 0.36);
+  font-size: 12px;
+  padding: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.35s;
+}
+
+.goTop svg {
+  font-size: 18px;
+  color: #fff;
+}
+
+.goTop:hover {
+  background-color: #e22a6c;
+  transform: translateY(-15px);
+}
+
+/*# sourceMappingURL=GoTopButton.module.css.map */

@@ -1,0 +1,27 @@
+@import "../../../../common/styles/sass/variables";
+
+.goTop {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  background-color: rgba(179, 179, 179, 0.36);
+  font-size: 12px;
+  padding: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.35s;
+}
+
+.goTop svg {
+  font-size: 18px;
+  color: $primaryColor;
+}
+
+.goTop:hover {
+  background-color: $accentColor;
+  transform: translateY(-15px);
+}

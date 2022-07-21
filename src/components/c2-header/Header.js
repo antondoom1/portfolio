@@ -1,7 +1,7 @@
 import s from './Header.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import headerBg from './img/Jhon.jpg'
-import {MainButton} from '../c0-common/main-button/mainButton'
+import {MainButton} from '../c0-common/buttons/main-button/mainButton'
 
 export const Header = () => {
   const background = {

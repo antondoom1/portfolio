@@ -1,7 +1,7 @@
 import s from './AboutMain.module.scss'
 import aboutPhoto from '../a1-img/Jhonp.jpg'
 import {SkillsList} from '../a4-skills-list/SkillsList'
-import {MainButton} from '../../c0-common/main-button/mainButton'
+import {MainButton} from '../../c0-common/buttons/main-button/mainButton'
 
 export const AboutMain = () => {
   return (
