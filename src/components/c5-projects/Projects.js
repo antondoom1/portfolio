@@ -1,22 +1,46 @@
-import s from './Projects.module.css'
-import sContainer from '../../common/styles/Container.module.css'
+import s from './Projects.module.scss'
 import {Project} from './project/Project'
+import img1 from './img/p2.jpg'
+import img2 from './img/p5.jpg'
+import img3 from './img/p6.jpg'
+import img4 from './img/p3.jpg'
 
 export const Projects = () => {
   return (
-    <div className={s.projectsBlock}>
-      <div className={`${sContainer.container} ${s.projectsContainer}`}>
-        <h2 className={s.title}>Projects</h2>
-        <div className={s.projects}>
-          <Project
-            title={'Project name'}
-            description={'Description ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur cum eligendi fugiat hic.'}/>
-          <Project
-            title={'Project2 name'}
-            description={'Description2 adipisci blanditiis eveniet fugit iste perferendis perspiciatis tempora unde veritatis voluptate.'}/>
+    <section className={s.projects}>
+
+      <div className={s.container}>
+
+        <div>
+          <h2>
+            Recent Works
+          </h2>
+          <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+            1.10.32 and 1.10.33 from
+          </p>
         </div>
+
+
+        <div className={s.row}>
+
+          <Project img={img2}/>
+          <Project img={img1}/>
+          <Project img={img3}/>
+
+        </div>
+
+        <div className={s.row}>
+
+          <Project img={img1}/>
+          <Project img={img4}/>
+          <Project img={img1}/>
+
+        </div>
+
       </div>
-    </div>
+
+    </section>
   )
 }
 

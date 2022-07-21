@@ -24,3 +24,25 @@
   margin-left: -3.75rem;
   background: $background;
 }
+
+// ------ Menu mixins -------
+
+@mixin listItem($top, $left, $right, $bottom, $background, $transitionDelay) {
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  background: $background;
+  transition-delay: $transitionDelay;
+}
+
+@mixin listItemOpen($transitionDelay) {
+  transition-delay: $transitionDelay;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 214deg);
+  opacity: 1;
+}
+
+@mixin listItemActive($background) {
+  background: $background;
+  color: $primaryColor;
+}

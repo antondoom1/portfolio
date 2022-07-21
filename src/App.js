@@ -1,4 +1,5 @@
 import './App.css'
+import {Menu} from './components/c1-menu/Menu'
 import {Header} from './components/c2-header/Header'
 import {About} from './components/c3-about/About'
 import {Services} from './components/c4-services/Services'
@@ -9,13 +10,13 @@ import {Footer} from './components/c7-footer/Footer'
 function App() {
   return (
     <div className="App">
-      {/*<Menu/>*/}
-      <Header/>
-      <About/>
-      <Services/>
-      <Projects/>
-      <Contacts/>
-      <Footer/>
+      <Menu/>
+      {/*<Header/>*/}
+      {/*<About/>*/}
+      {/*<Services/>*/}
+      {/*<Projects/>*/}
+      {/*<Contacts/>*/}
+      {/*<Footer/>*/}
     </div>
   )
 }

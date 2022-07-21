@@ -1,5 +1,4 @@
 import s from './Contacts.module.scss'
-import {MainButton} from '../c0-common/main-button/mainButton'
 
 export const Contacts = () => {
   return (

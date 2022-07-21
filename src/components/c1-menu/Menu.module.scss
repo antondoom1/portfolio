@@ -1,0 +1,134 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.nav {
+  top: -165px;
+  right: -165px;
+  display: block;
+  position: fixed;
+  z-index: 999;
+  width: 500px;
+  height: 500px;
+  transform: translate3d(25px, -25px, 0);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+
+  .disc {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Intro', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 10px;
+    border-radius: 250px;
+    transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 214deg);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+
+    div {
+      transform: rotate(180deg);
+    }
+  }
+
+  .disc:hover, .disc {
+    text-decoration: none;
+    color: $primaryColor !important;
+  }
+
+  .l1 {
+    @include listItem(0, 0, 0, 0, $menuColor1, 0s)
+  }
+
+  .l2 {
+    @include listItem(50px, 50px, 50px, 50px, $menuColor2, 0.1s)
+  }
+
+  .l3 {
+    @include listItem(100px, 100px, 100px, 100px, $menuColor3, 0.2s)
+  }
+
+  .l4 {
+    @include listItem(150px, 150px, 150px, 150px, $menuColor4, 0.3s)
+  }
+
+  .l5 {
+    @include listItem(200px, 200px, 200px, 200px, $accentColor, 0.4s)
+  }
+
+  .toggle {
+    line-height: 100px;
+    padding: 0;
+    width: 100px;
+    background: #e22a6c;
+    opacity: 1;
+    transform: none;
+    transition-delay: 0s;
+
+    &:hover {
+      background: #1a1600;
+    }
+
+    &:active {
+      background: #806c00;
+      color: rgba(255, 215, 0, 0.5);
+      transform: scale(0.9);
+      transition-duration: 0s;
+    }
+  }
+}
+
+.nav.open {
+  transform: translate3d(0, 0, 0);
+
+  .l1 {
+    @include listItemOpen(0s)
+  }
+
+  .l2 {
+    @include listItemOpen(0.1s)
+  }
+
+  .l3 {
+    @include listItemOpen(0.2s)
+  }
+
+  .l4 {
+    @include listItemOpen(0.3s)
+  }
+
+  .l5 {
+    @include listItemOpen(0.4s)
+  }
+
+  .l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover {
+    background: $hoverColor;
+    color: $primaryColor;
+    transition-delay: 0s;
+  }
+
+  .l1:active {
+    @include listItemActive(#803224)
+  }
+
+  .l2:active {
+    @include listItemActive(#803d1d)
+  }
+
+  .l3:active {
+    @include listItemActive(#804916)
+  }
+
+  .l4:active {
+    @include listItemActive(#80550e)
+  }
+
+  .l5:active {
+    background: #806007;
+    color: #ffc00e !important;
+  }
+
+  .toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 35deg);
+  }
+}

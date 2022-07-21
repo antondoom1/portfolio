@@ -1,0 +1,58 @@
+/* Color Theme Swatches in Hex */
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container a {
+  text-decoration: none;
+}
+.container a .iBox {
+  padding: 60px 20px;
+  transition: 0.5s ease;
+  height: 198px;
+  transition-property: background-color, box-shadow;
+  color: #fff;
+  width: 350px;
+  animation-name: uk-fade-bottom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+@keyframes uk-fade-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container a .iBox:hover {
+  background: #fff;
+  border-radius: 3px;
+}
+.container a .iBox:hover svg {
+  color: #e22a6c;
+}
+.container a .iBox:hover h4 {
+  color: #444;
+}
+.container a .iBox p {
+  display: none;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+.container a .iBox:hover p {
+  color: #999;
+  display: block;
+}
+.container a .iBox h4 {
+  margin-top: 30px;
+  font-family: "Intro", "Helvetica", "Arial", "sans-serif";
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=ServiceItem.module.css.map */
