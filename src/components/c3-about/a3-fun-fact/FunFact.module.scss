@@ -1,0 +1,15 @@
+@import "../../../common/styles/sass/variables";
+
+.container {
+  background: $bgColor;
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  div {
+    width: 290px
+  }
+}
+
+

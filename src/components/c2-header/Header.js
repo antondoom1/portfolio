@@ -1,4 +1,4 @@
-import s from './Header.module.css'
+import s from './Header.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import headerBg from './img/Jhon.jpg'
 import {MainButton} from '../c0-common/main-button/mainButton'

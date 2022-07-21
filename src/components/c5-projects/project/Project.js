@@ -1,15 +1,9 @@
-import s from './Project.module.css'
+import s from './Project.module.scss'
 
 export const Project = (props) => {
   return (
-    <div className={s.project}>
-      <div className={s.imgContainer}>
-        <h4 className={s.button}>Watch</h4>
-      </div>
-      <div className={s.description}>
-        <h5>{props.title}</h5>
-        <div>{props.description}</div>
-      </div>
+    <div>
+      <img src={props.img} alt="project1" className={s.img}/>
     </div>
   )
 }

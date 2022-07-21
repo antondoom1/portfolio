@@ -1,4 +1,4 @@
-import s from './ServiceItem.module.css'
+import s from './ServiceItem.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export const ServiceItem = (props) => {

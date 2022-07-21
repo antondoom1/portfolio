@@ -1,0 +1,67 @@
+@import "../../../common/styles/sass/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+
+    .iBox {
+      padding: 60px 20px;
+      transition: .5s ease;
+      height: 198px;
+      transition-property: background-color, box-shadow;
+      color: $primaryColor;
+      width: 350px;
+      animation-name: uk-fade-bottom;
+      animation-duration: .5s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: both;
+
+      @keyframes uk-fade-bottom {
+        0% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      &:hover {
+        background: $primaryColor;
+        border-radius: 3px;
+      }
+
+      &:hover svg {
+        color: $accentColor;
+      }
+
+      &:hover h4 {
+        color: $textColor;
+      }
+
+      p {
+        display: none;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 20px 0;
+      }
+
+      &:hover p {
+        color: #999;
+        display: block;
+      }
+
+      h4 {
+        margin-top: 30px;
+        font-family: 'Intro', 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 1.1rem;
+        line-height: 1.4;
+      }
+    }
+  }
+}

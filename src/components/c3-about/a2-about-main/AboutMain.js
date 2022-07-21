@@ -1,4 +1,4 @@
-import s from './AboutMain.module.css'
+import s from './AboutMain.module.scss'
 import aboutPhoto from '../a1-img/Jhonp.jpg'
 import {SkillsList} from '../a4-skills-list/SkillsList'
 import {MainButton} from '../../c0-common/main-button/mainButton'

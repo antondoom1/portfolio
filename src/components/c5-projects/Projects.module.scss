@@ -1,0 +1,33 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.projects {
+  @include sectionChunk($bgColor, $textColor);
+
+  .container {
+    text-align: center;
+
+    h2 {
+      @include title();
+      color: $secondaryColor;
+
+      &::before {
+        @include aboveTitleLine($accentColor);
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 50px 0;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+}

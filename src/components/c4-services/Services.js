@@ -1,4 +1,4 @@
-import s from './Services.module.css'
+import s from './Services.module.scss'
 import {ServiceItem} from './Serviceitem/ServiceItem'
 
 export const Services = () => {

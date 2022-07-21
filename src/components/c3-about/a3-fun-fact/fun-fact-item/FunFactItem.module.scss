@@ -1,0 +1,23 @@
+.fFact {
+  text-align: center;
+  width: 100%;
+
+  div {
+    margin-bottom: 5px;
+  }
+
+  span {
+    font-size: 20px;
+    font-family: 'Poppins-Bold', 'Helvetica', 'Arial', 'sans-serif';
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+  }
+}
+
+.border {
+  border-right: 2px solid #e8e8e8;
+}

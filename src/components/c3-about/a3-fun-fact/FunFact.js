@@ -1,4 +1,4 @@
-import s from './FunFact.module.css'
+import s from './FunFact.module.scss'
 import {FunFactItem} from './fun-fact-item/FunFactItem'
 
 export const FunFact = () => {

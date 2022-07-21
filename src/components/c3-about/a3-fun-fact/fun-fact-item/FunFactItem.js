@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import s from './FunFactItem.module.css'
+import s from './FunFactItem.module.scss'
 
 export const FunFactItem = (props) => {
 

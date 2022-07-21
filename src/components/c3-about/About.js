@@ -1,4 +1,4 @@
-import s from './a2-about-main/AboutMain.module.css'
+import s from './a2-about-main/AboutMain.module.scss'
 import {AboutMain} from './a2-about-main/AboutMain'
 import {FunFact} from './a3-fun-fact/FunFact'
 
