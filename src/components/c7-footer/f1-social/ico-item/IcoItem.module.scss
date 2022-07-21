@@ -1,0 +1,14 @@
+@import '../../../../common/styles/sass/variables';
+
+.item {
+  svg {
+    height: 40px;
+    fill: #c4c4c4;
+    cursor: pointer;
+    transition: all 0.35s;
+
+    &:hover {
+      fill: $textColor;
+    }
+  }
+}

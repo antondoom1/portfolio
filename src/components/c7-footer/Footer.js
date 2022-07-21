@@ -1,19 +1,14 @@
-import s from './Footer.module.css'
-import sContainer from '../../common/styles/Container.module.css'
+import {Social} from './f1-social/Social'
+import {Copyright} from './f2-copyright/Copyright'
 
 export const Footer = () => {
   return (
-    <div className={s.footer}>
-      <div className={`${sContainer.container} ${s.container}`}>
-        <h2>Anton Yakavenka</h2>
-        <div className={s.iconsBlock}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <span>©2022 All rights reserved</span>
-      </div>
-    </div>
+    <footer>
+
+      <Social/>
+
+      <Copyright/>
+
+    </footer>
   )
 }

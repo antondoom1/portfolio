@@ -1,0 +1,9 @@
+@import "../../../common/styles/sass/variables";
+
+.copyright {
+  background: $secondaryColor;
+  color: $bgColor;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px;
+}

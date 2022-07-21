@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="App">
       {/*<Menu/>*/}
-      {/*<Header/>*/}
-      {/*<About/>*/}
-      {/*<Services/>*/}
-      {/*<Projects/>*/}
-      {/*<Contacts/>*/}
+      <Header/>
+      <About/>
+      <Services/>
+      <Projects/>
+      <Contacts/>
       <Footer/>
     </div>
   )
