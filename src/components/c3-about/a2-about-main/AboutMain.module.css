@@ -21,43 +21,48 @@
   max-width: 100%;
   max-height: 545px;
 }
-.about .container .aboutInfoContainer {
+@media screen and (max-width: 560px) {
+  .about .container .photoContainer {
+    padding-left: 5px;
+  }
+}
+.about .aboutInfoContainer {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   max-width: 555px;
 }
-.about .container .aboutInfoContainer h3 {
+.about .aboutInfoContainer h3 {
   font-family: "Intro", "Helvetica", "Arial", "sans-serif";
   font-size: 1.3rem;
   line-height: 1.4;
   margin: 10px 0 20px 0;
   color: #333;
 }
-.about .container .aboutInfoContainer p {
+.about .aboutInfoContainer p {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 0 20px 0;
 }
-.about .container .aboutInfoContainer .skillsContainer {
+.about .aboutInfoContainer .skillsContainer {
   display: flex;
   font-size: 18px;
   margin-bottom: 10px;
 }
-.about .container .aboutInfoContainer .skillsContainer div {
+.about .aboutInfoContainer .skillsContainer div {
   padding-right: 15px;
   width: 50%;
 }
-.about .container .aboutInfoContainer .skillsContainer ul {
+.about .aboutInfoContainer .skillsContainer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.about .container .aboutInfoContainer .skillsContainer ul li {
+.about .aboutInfoContainer .skillsContainer ul li {
   margin-bottom: 10px;
 }
-.about .container .aboutInfoContainer .skillsContainer ul li::before {
+.about .aboutInfoContainer .skillsContainer ul li::before {
   content: "";
   height: 30px;
   width: 5px;
@@ -67,7 +72,7 @@
   margin-right: 10px;
   top: 7px;
 }
-.about .container .aboutInfoContainer a {
+.about .aboutInfoContainer a {
   margin-top: 1.5em;
 }
 

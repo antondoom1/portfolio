@@ -18,6 +18,8 @@
   }
 }
 
-.border {
-  border-right: 2px solid #e8e8e8;
+@media screen and (min-width: 1160px) {
+  .border {
+    border-right: 2px solid #e8e8e8;
+  }
 }
